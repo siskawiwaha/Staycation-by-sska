@@ -4,5 +4,11 @@ import Button from "./index";
 
 test("Should not allowed click button if isDisable present", () => {
     const { container } = render(<Button isDisabled></Button>);
-    expect(contianer.querySelector("span-disabled")).toBeInTheDocument();
+    expect(container.querySelector("span-disabled")).toBeInTheDocument();
+});
+
+test("Should render loading/spinner", () => {
+    const { container, getByText } = render(<Button isLoading></Button>);
+
+    expect(getByText(/loading/)i).toBeInTheDocument();
 });
