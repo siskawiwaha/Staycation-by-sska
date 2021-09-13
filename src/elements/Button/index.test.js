@@ -10,5 +10,5 @@ test("Should not allowed click button if isDisable present", () => {
 test("Should render loading/spinner", () => {
     const { container, getByText } = render(<Button isLoading></Button>);
 
-    expect(getByText(/loading/)i).toBeInTheDocument();
+    expect(getByText(/loading/)).toBeInTheDocument();
 });
