@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -14,12 +15,13 @@
 @import "images";
 @import "code";
 @import "grid";
+@import "container-grid";
 @import "tables";
 @import "forms";
 @import "buttons";
 @import "transitions";
 @import "dropdown";
-@import "button-group";
+@import "button-group"; 
 @import "input-group";
 @import "custom-forms";
 @import "nav";
@@ -42,6 +44,11 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 .brand-text-icon {
     font-size: 26px;
@@ -86,3 +93,11 @@ header {
         }
         }
     }
+
+.section {
+    margin-bottom: 70px !important;
+}
+
+.card {
+    height: 100% !important;
+}
